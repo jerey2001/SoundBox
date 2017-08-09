@@ -60,11 +60,22 @@ react-native run-android
 
 **Tip 3:** Don't forget to enable USB debugging mode (on developper option after enable it)
 
-How to build APK
+How to build APK (dev):
 -------------------
 ```
 react-native bundle --dev false --platform android --entry-file index.android.js --bundle-output ./android/app/build/intermediates/assets/debug/index.android.bundle --assets-dest ./android/app/build/intermediates/res/merged/debug
 cd android && ./gradlew assembleDebug && cd -
 cp ./android/app/build/outputs/apk/app-debug.apk ./dist/SoundBox.apk
 
+```
+
+
+How to build a signed APK:
+-------------------
+```
+cd android && ./gradlew assembleRelease && cd -
+keytool -genkey -v -keystore android/keystores/my-keystore.keystore -alias android_keystore -keyalg RSA -validity 10000
+jarsigner -verbose -keystore android/keystores/my-keystore.keystore android/app/build/outputs/apk/app-release-unsigned.apk android_keystore
+zipalign -f -v 4 android/app/build/outputs/apk/app-release-unsigned.apk android/app/build/outputs/apk/app-release-signed.apk
+cp ./android/app/build/outputs/apk/app-release-signed.apk ./dist/SoundBox.apk
 ```
