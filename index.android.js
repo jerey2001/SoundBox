@@ -12,7 +12,7 @@ import {
 
 import SoundButton from './SoundButton';
 
-const REQUEST_URL = 'https://raw.githubusercontent.com/jerey2001/LfSoundBox/master/sounds.json';
+const REQUEST_URL = 'https://raw.githubusercontent.com/jerey2001/SoundBox/master/sounds.json';
 
 export default class SoundBox extends Component {
     constructor(props) {

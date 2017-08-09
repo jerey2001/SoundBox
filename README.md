@@ -53,6 +53,18 @@ just follow this tutorial: https://facebook.github.io/react-native/docs/running-
 ```
 react-native run-android
 ```
+
 **Tip:** Your computer and your device must be on the same wifi/eth network
+
 **Tip 2:** Your device must NOT be on charge only (select file transfer mode)
+
 **Tip 3:** Don't forget to enable USB debugging mode (on developper option after enable it)
+
+How to build APK
+-------------------
+```
+react-native bundle --dev false --platform android --entry-file index.android.js --bundle-output ./android/app/build/intermediates/assets/debug/index.android.bundle --assets-dest ./android/app/build/intermediates/res/merged/debug
+cd android && ./gradlew assembleDebug && cd -
+cp ./android/app/build/outputs/apk/app-debug.apk ./dist/SoundBox.apk
+
+```

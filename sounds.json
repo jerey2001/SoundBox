@@ -2,15 +2,15 @@
   "sounds": [
     {
       "label": "T'as rien compris",
-      "url": "https://raw.githubusercontent.com/jerey2001/LfSoundBox/master/sounds/tasriencompris.mp3"
+      "url": "https://raw.githubusercontent.com/jerey2001/SoundBox/master/sounds/tasriencompris.mp3"
     },
     {
       "label": "2eme son",
-      "url": "https://raw.githubusercontent.com/jerey2001/LfSoundBox/master/sounds/tasriencompris.mp3"
+      "url": "https://raw.githubusercontent.com/jerey2001/SoundBox/master/sounds/tasriencompris.mp3"
     },
     {
       "label": "3eme son.....",
-      "url": "https://raw.githubusercontent.com/jerey2001/LfSoundBox/master/sounds/tasriencompris.mp3"
+      "url": "https://raw.githubusercontent.com/jerey2001/SoundBox/master/sounds/tasriencompris.mp3"
     }
   ]
 }
