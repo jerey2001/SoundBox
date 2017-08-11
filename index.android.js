@@ -10,6 +10,7 @@ import {
     Text
 } from 'react-native';
 
+import GridView from 'react-native-easy-gridview';
 import SoundButton from './SoundButton';
 
 const REQUEST_URL = 'https://raw.githubusercontent.com/jerey2001/SoundBox/master/sounds.json';
@@ -47,11 +48,16 @@ export default class SoundBox extends Component {
         }
 
         return (
-            <ListView
-                dataSource={this.state.dataSource}
-                renderRow={this.renderSound}
-                style={styles.listView}
-            />
+	  <View style={styles.listContainer}>
+            <GridView
+              dataSource={this.state.dataSource}
+              renderRow={this.renderSound}
+	      numberOfItemsPerRow={2}
+              removeClippedSubviews={false}
+              initialListSize={1}
+              pageSize={2}
+	    />
+          />
         );
     }
 
@@ -66,24 +72,34 @@ export default class SoundBox extends Component {
     };
 
     renderSound = (sound) => {
-        return <SoundButton sound={sound} />;
+        return (
+	  <View style={styles.item}>
+	    <SoundButton sound={sound} />
+	  </View>
+	);
     }
 }
 
 var styles = StyleSheet.create({
+    listContainer: {
+        flex: 1, 
+        backgroundColor: 'powderblue'
+    },
+    item: {
+        backgroundColor: 'navajowhite', 
+        margin: 3, 
+        paddingVertical: 7, 
+        borderWidth: 4, 
+        borderColor: 'orange', 
+        alignItems: 'center', 
+        justifyContent: 'center'
+    }
     container: {
         flex: 1,
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
         backgroundColor: '#F5FCF0',
-    },
-    listView: {
-        paddingTop: 20,
-        backgroundColor: '#FFFFFF',
-    },
-    rightContainer: {
-        flex: 1,
     }
 });
 
