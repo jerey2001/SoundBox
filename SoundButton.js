@@ -23,7 +23,7 @@ export default class SoundButton extends React.Component {
     render() {
         return (
             <View>
-                <Button title={this.props.sound.label} onPress={this.playSound} />
+                <Button color="#088A29" title={this.props.sound.label} onPress={this.playSound} />
             </View>
         );
     }
