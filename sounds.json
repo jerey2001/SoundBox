@@ -5,12 +5,32 @@
       "url": "https://raw.githubusercontent.com/jerey2001/SoundBox/master/sounds/tasriencompris.mp3"
     },
     {
-      "label": "2eme son",
-      "url": "https://raw.githubusercontent.com/jerey2001/SoundBox/master/sounds/tasriencompris.mp3"
+      "label": "baptiste: Mais ça va pas !",
+      "url": "http://laboiteabaptiste.fr/sons/baptiste_8.mp3"
     },
     {
-      "label": "3eme son.....",
-      "url": "https://raw.githubusercontent.com/jerey2001/SoundBox/master/sounds/tasriencompris.mp3"
+      "label": "baptiste: Non non non",
+      "url": "http://laboiteabaptiste.fr/sons/baptiste_12.mp3"
+    },
+    {
+      "label": "baptiste: T'es pas net",
+      "url": "http://laboiteabaptiste.fr/sons/baptiste_11.mp3"
+    },
+    {
+      "label": "baptiste: J'suis très net",
+      "url": "http://laboiteabaptiste.fr/sons/baptiste_10.mp3"
+    },
+    {
+      "label": "baptiste: J'ai rien pris",
+      "url": "http://laboiteabaptiste.fr/sons/baptiste_28.mp3"
+    },
+    {
+      "label": "bernie: j'avale un rat",
+      "url": "https://raw.githubusercontent.com/jerey2001/SoundBox/master/sounds/bernie_rats.mp3"
+    },
+    {
+      "label": "Jsuis pas venue ici pour souffrir",
+      "url": "https://raw.githubusercontent.com/jerey2001/SoundBox/master/sounds/souffrir_ok.mp3"
     }
   ]
 }
